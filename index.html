@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MTRY Solutions</title>
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    :root {
+      --primary: #0077cc;
+      --light: #f9fafe;
+      --accent: #e6f0fa;
+      --dark: #1a1a1a;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+      animation: fadeInBody 1.2s ease-in;
+    }
+
+    @keyframes fadeInBody {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    header {
+      background: linear-gradient(135deg, #004c99, #0077cc);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header img {
+      max-width: 140px;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 2.6em;
+      margin: 0 0 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      opacity: 0.9;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    .services {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .service {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+      padding: 40px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .service:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    .service h2 {
+      color: var(--primary);
+      margin-top: 0;
+      font-size: 1.6em;
+    }
+
+    .service h3 {
+      font-size: 1.1em;
+      color: #333;
+      margin-bottom: 16px;
+    }
+
+    .service p {
+      color: #555;
+      line-height: 1.7;
+      font-size: 1em;
+    }
+
+    .contact {
+      background-color: var(--accent);
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .contact p {
+      font-size: 1.1em;
+      color: #333;
+      margin: 10px 0;
+    }
+
+    .contact a.button {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: var(--primary);
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact a.button:hover {
+      background-color: #005fa3;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header data-aos="fade-down">
+    <img src="logo4.png" alt="MTRY Solutions Logo" />
+    <h1>Empowering Your Business with Smart IT Solutions</h1>
+    <p>Innovative strategies. Scalable systems. Lasting impact.</p>
+  </header>
+
+  <section>
+    <div class="services">
+      <div class="service" data-aos="fade-up">
+        <h2>IT Consulting</h2>
+        <h3>Strategic infrastructure for your future</h3>
+        <p>
+          Our IT consulting services are designed to align technology with your business goals. Whether you're a startup needing foundational architecture or an enterprise scaling global systems, we provide tailored guidance on IT strategy, digital transformation, and systems optimization. We analyze your current landscape, identify gaps, and create a roadmap that ensures long-term agility and performance.
+        </p>
+      </div>
+
+      <div class="service" data-aos="fade-up" data-aos-delay="100">
+        <h2>Cloud Integration</h2>
+        <h3>Scale with confidence</h3>
+        <p>
+          We specialize in seamless cloud migrations and hybrid architecture design. Whether it's AWS, Azure, or private infrastructure, our experts ensure secure, cost-efficient, and scalable cloud environments. We handle everything from architecture setup and data migration to security hardening and performance tuning, so you can focus on innovation, not infrastructure.
+        </p>
+      </div>
+
+      <div class="service" data-aos="fade-up" data-aos-delay="200">
+        <h2>AI & Automation</h2>
+        <h3>Smarter processes, better results</h3>
+        <p>
+          From AI-driven analytics to process automation, we help businesses reduce manual work and make intelligent decisions faster. Our solutions integrate machine learning, NLP, and robotic process automation (RPA) to transform operations, improve customer service, and unlock valuable business insights from your data.
+        </p>
+      </div>
+
+      <div class="service" data-aos="fade-up" data-aos-delay="300">
+        <h2>DevOps Services</h2>
+        <h3>Accelerate development cycles</h3>
+        <p>
+          We implement DevOps pipelines that streamline your development, testing, and deployment processes. By introducing infrastructure as code (IaC), continuous integration/delivery (CI/CD), and container orchestration, we help teams release better software faster, with less risk and more collaboration between development and operations.
+        </p>
+      </div>
+
+      <div class="service" data-aos="fade-up" data-aos-delay="400">
+        <h2>Security & Compliance</h2>
+        <h3>Built-in protection, peace of mind</h3>
+        <p>
+          Security is not an afterthought! It's a foundation. Our services include vulnerability assessments, penetration testing, identity management, and regulatory compliance (GDPR, ISO 27001, SOC 2). We ensure your systems are protected against threats and aligned with legal requirements, so your reputation and operations remain secure.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" data-aos="zoom-in">
+    <h2>Let's Work Together</h2>
+    <p>Have a project in mind or need custom IT support? Reach out! We’re here to help you succeed.</p>
+    <a class="button" href="mailto:mtryhoen@gmail.com">Get in Touch</a>
+  </section>
+
+  <footer data-aos="fade-up">
+    <p>&copy; 2025 MTRY Solutions. All rights reserved.</p>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
+</body>
+</html>
