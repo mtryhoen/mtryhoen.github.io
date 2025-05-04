@@ -67,16 +67,19 @@
     }
 
     .service {
-      background-color: white;
-      border-radius: 12px;
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
-      padding: 40px;
-      transition: transform 0.3s, box-shadow 0.3s;
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      margin: 15px 0;
+      cursor: pointer;
     }
 
     .service:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+      transform: scale(1.03);
+      background-color: #f0f8ff; /* subtle background tint */
     }
 
     .service h2 {
@@ -137,15 +140,36 @@
       padding: 20px;
       font-size: 0.9em;
     }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px 30px;
+      background-color: var(--accent);
+    }
+    
+    .logo {
+      width: 180px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    
+    .tagline {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
   </style>
 </head>
 <body>
 
-  <header data-aos="fade-down">
-    <img src="logo4.png" alt="MTRY Solutions Logo" />
-    <h1>Empowering Your Business with Smart IT Solutions</h1>
-    <p>Innovative strategies. Scalable systems. Lasting impact.</p>
-  </header>
+  <section class="hero">
+    <img src="logo4.png" alt="Mtry Solutions Logo" class="logo" />
+    <h1 class="tagline" data-aos="fade-up" data-aos-delay="200">
+      Modern Technology. Real Solutions. Your Way.
+    </h1>
+  </section>
 
   <section>
     <div class="services">
